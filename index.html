@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Mahabir Singh | Data Analyst Portfolio</title>
+
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap" rel="stylesheet">
+
+<style>
+:root {
+    --bg-color: #0f172a;
+    --card-bg: rgba(30, 41, 59, 0.7);
+    --text-color: #e2e8f0;
+    --accent-color: #34d399;
+    --nav-bg: rgba(15, 23, 42, 0.8);
+    --border-color: #334155;
+}
+
+* {margin:0; padding:0; box-sizing:border-box;}
+
+body {
+    font-family:'Inter', sans-serif;
+    background:var(--bg-color);
+    color:var(--text-color);
+    line-height:1.6;
+}
+
+/* NAV */
+nav {
+    position:fixed;
+    width:100%;
+    display:flex;
+    justify-content:space-between;
+    padding:1rem 5%;
+    background:var(--nav-bg);
+    border-bottom:1px solid var(--border-color);
+    z-index:1000;
+}
+
+.logo {color:var(--accent-color); font-weight:700;}
+.nav-links {display:flex; gap:20px;}
+.nav-links a:hover {color:var(--accent-color);}
+
+/* HERO */
+header {
+    height:100vh;
+    display:flex;
+    align-items:center;
+    justify-content:space-between;
+    padding:0 10%;
+}
+
+.hero-text {max-width:600px;}
+
+.subtitle {color:var(--accent-color);}
+h1 {font-size:3rem;}
+
+.hero-img img {
+    width:300px;
+    border-radius:20px;
+    border:3px solid var(--accent-color);
+}
+
+/* BUTTON */
+.btn {
+    padding:10px 20px;
+    margin-right:10px;
+    border-radius:8px;
+    text-decoration:none;
+}
+
+.btn-primary {background:var(--accent-color); color:#000;}
+.btn-outline {border:1px solid var(--accent-color);}
+
+/* SECTION */
+section {padding:5rem 10%;}
+.section-title {margin-bottom:20px;}
+
+/* CARD */
+.card {
+    background:var(--card-bg);
+    padding:20px;
+    border-radius:10px;
+    border:1px solid var(--border-color);
+    margin-bottom:20px;
+}
+
+/* PROJECT */
+.project-grid {
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(300px,1fr));
+    gap:20px;
+}
+
+.project-card img {
+    width:100%;
+    height:200px;
+    object-fit:cover;
+}
+
+/* SKILLS */
+/* 🔥 Skills Box Wrapper */
+.skills-box {
+    background: var(--card-bg);
+    border: 1px solid var(--border-color);
+    border-radius: 12px;
+    padding: 15px 20px;
+    width: fit-content;   /* 🔥 keeps box tight (not full width) */
+}
+
+/* Optional: small hover effect */
+.skill-item:hover {
+    background: rgba(52, 211, 153, 0.1);
+    border-radius: 8px;
+    transform: translateY(-2px);
+}
+
+.skills-row {
+    display: flex;
+    justify-content: flex-start;  /* 🔥 align to LEFT */
+    align-items: center;
+    gap: 15px;                     /* small gap */
+    flex-wrap: nowrap;            /* keep in one line */
+}
+
+.skill-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    font-size: 0.90rem;
+    padding: 5px 8px;
+}
+
+.skill-item img {
+    width: 40px;
+    height: 40px;
+    margin-bottom: 4px;
+}
+
+/* MOBILE */
+@media(max-width:768px){
+    header {flex-direction:column; text-align:center;}
+    .nav-links {display:none;}
+}
+</style>
+</head>
+
+<body>
+
+<!-- NAV -->
+<nav>
+<div class="logo">&lt;MAHABIR SINGH&gt;</div>
+<div class="nav-links">
+<a href="#about">About</a>
+<a href="#education">Education</a>
+<a href="#projects">Projects</a>
+<a href="#skills">Skills</a>
+<a href="#contact">Contact</a>
+</div>
+</nav>
+
+<!-- HERO -->
+<header>
+
+<div class="hero-text">
+<p class="subtitle">> Data Analyst | MSc Data Science</p>
+<h1>Turning Raw Data into Strategic Insights</h1>
+
+<p>I help businesses make better decisions using data analysis.</p>
+
+<br>
+<a href="#projects" class="btn btn-primary">Projects</a>
+<a href="MahabirSingh_resume.pdf" download class="btn btn-outline">
+Download Resume
+</a>
+</div>
+
+<div class="hero-img">
+<img src="images/Mahabir.png">
+</div>
+
+</header>
+
+<!-- ABOUT -->
+<section id="about">
+<h2 class="section-title">About</h2>
+
+<div class="card">
+<p>
+I am a detail-oriented Data Analyst currently pursuing an MSc in Data Science with a specialization in Business Analytics, passionate about working with data using Python, SQL, Power BI, and Excel to uncover insights and solve business problems.
+</p>
+</div>
+
+<div class="card">
+<h3>Key Strengths</h3>
+<ul>
+<li>Problem-solving and analytical thinking</li>
+<li>Experience with real-world datasets</li>
+<li>Dashboard creation using Power BI</li>
+<li>Basic Machine Learning knowledge</li>
+<li>Quick learner and adaptable</li>
+</ul>
+</div>
+
+</section>
+
+<!-- EDUCATION -->
+<section id="education">
+<h2 class="section-title">Education</h2>
+
+<div class="card">
+<p><strong>MSc Data Science</strong></p>
+<p>Somaiya Vidyavihar University</p>
+<p>2025 – 2027 | CGPA: Sem1- 9.30</p>
+</div>
+
+<div class="card">
+<p><strong>BSc Computer Science</strong></p>
+<p>NES Ratnam College Of Arts, Science & Commerce</p>
+<p>2022 – 2025 | CGPA: 9.70</p>
+</div>
+
+<div class="card">
+<p><strong>Higher Secondary (12th)</strong></p>
+<p>NES Ratnam College Of Arts, Science & Commerce</p>
+<p>2020 – 2022 | Percentage: 68.33%</p>
+</div>
+
+<div class="card">
+<p><strong>Secondary (10th)</strong></p>
+<p>Shivram Singh Sanman Singh English High School</p>
+<p>2019 – 2020 | Percentage: 84.40%</p>
+</div>
+
+</section>
+
+<!-- PROJECTS -->
+<section id="projects">
+<h2 class="section-title">Projects</h2>
+
+<div class="project-grid">
+
+<div class="card project-card">
+<img src="images/medicine_recommendation_system.jpg">
+<h3>Medicine Recommendation System</h3>
+<p>ML-based disease prediction.</p>
+</div>
+
+<div class="card project-card">
+<img src="images/Farmer_Analysis.jpg">
+<h3>Farmer Dashboard</h3>
+<p>Power BI dashboard.</p>
+</div>
+
+<div class="card project-card">
+<img src="images/youtube_comment_analysis.jpg">
+<h3>YouTube Analysis</h3>
+<p>Sentiment + topic modeling.</p>
+</div>
+
+<div class="card project-card">
+<img src="images/Data_analystics_Portal.jpg">
+<h3>Data Analytics Portal</h3>
+<p>Interactive analytics web app.</p>
+</div>
+
+</div>
+
+</section>
+
+<!-- SKILLS -->
+<section id="skills">
+<h2 class="section-title">Skills</h2>
+
+<div class="skills-row">
+
+<div class="skill-item">
+<img src="images\pyhton_logo.jpg">
+<span>Python</span>
+</div>
+
+<div class="skill-item">
+<img src="images\sql_logo.jpg">
+<span>SQL</span>
+</div>
+
+<div class="skill-item">
+<img src="images\powerbi_logo.jpg">
+<span>Power BI</span>
+</div>
+
+<div class="skill-item">
+<img src="images\ML_logo.jpg">
+<span>Machine Learning</span>
+</div>
+
+<div class="skill-item">
+<img src="images\Excel_logo.jpg">
+<span>Excel</span>
+</div>
+
+</div>
+
+</section>
+
+<!-- CONTACT -->
+<section id="contact">
+<h2 class="section-title">Contact</h2>
+
+<a href="mailto:singhmahabir2004@gmail.com" class="contact-btn">Email</a>
+<a href="https://github.com/MahabirSingh2004" target="_blank" class="contact-btn">GitHub</a>
+<a href="https://linkedin.com/in/mahabir-singh-05a01823b" target="_blank" class="contact-btn">LinkedIn</a>
+
+</section>
+
+<footer>
+<p>© 2026 Mahabir Singh</p>
+</footer>
+
+</body>
+</html>
